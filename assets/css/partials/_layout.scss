@@ -1,0 +1,83 @@
+@mixin responsivi($breakpoint){
+    @media screen and (max-width: $breakpoint){
+        @content;
+    }
+}
+
+.btn{
+    background-color: $Bright-Red;
+    color: $Very-Light-Gray;
+    text-decoration: none;
+    font-family: 'Be vietnam pro', sans-serif;
+    text-align: center;
+    padding: 16px 24px;
+    border-radius: 24px;
+}
+
+header{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+
+    .navbar-desktop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        nav{
+            ul{
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                
+                a{
+                    font-family: 'Be vietnam pro', sans-serif;
+                    text-decoration: none;
+                    color: $Very-Dark-Blue;
+                }
+            }
+        }
+        @include responsivi(740px){
+            display: none;
+        }
+    }
+    .navbar-mobile{
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        
+        .menu-h{
+            cursor: pointer;
+        }
+        @include responsivi(740px){
+            display: flex;
+        }
+    }
+    .menu-mobile{
+        max-width: 400px;
+        display: block;
+        margin: 24px auto 0;
+       
+        nav{
+            background-color: $Very-Light-Gray;
+            box-shadow: 0px 4px 5px 0 hsla(233, 12%, 13%, 0.26);
+            border-radius: 4px;
+            padding: 24px 0;
+            ul{
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                
+                a{
+                    font-family: 'Be vietnam pro', sans-serif;
+                    text-decoration: none;
+                    color: $Very-Dark-Blue;
+                }
+            }
+        }
+    }
+}

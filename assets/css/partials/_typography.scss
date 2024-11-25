@@ -1,0 +1,67 @@
+@mixin responsivi($breakpoint){
+    @media screen and (max-width: $breakpoint){
+        @content;
+    }
+}
+
+h1{
+    font-family: 'Be vietnam pro', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: $Very-Dark-Blue;
+
+    @include responsivi(375px){
+        font-size: 32px;
+        font-weight: 700;
+        color: $Very-Dark-Blue;
+    }
+}
+h2{
+    font-family: 'Be vietnam pro', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: $Very-Dark-Blue;
+
+    @include responsivi(375px){
+        font-size: 24px;
+        font-weight: 700;
+        color: $Very-Dark-Blue;
+    }
+}
+h3{
+    font-family: 'Be vietnam pro', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: $Very-Dark-Blue;
+
+    @include responsivi(375px){
+        font-size: 16px;
+        font-weight: 600;
+        color: $Very-Dark-Blue;
+    }
+}
+h4{
+    font-family: 'Be vietnam pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: $Very-Dark-Blue;
+
+    @include responsivi(375px){
+        font-size: 14px;
+        font-weight: 600;
+        color: $Very-Dark-Blue;
+    }
+}
+
+p{
+    font-family: 'Be vietnam pro', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: $Very-Dark-Blue;
+
+    @include responsivi(375px){
+        font-size: 14px;
+        font-weight: 500;
+        color: $Very-Dark-Blue;
+    }
+}

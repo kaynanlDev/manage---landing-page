@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+   
+    @import 'partials/colors';
+    @import 'partials/typography';
+    @import 'partials/layout';
+    background-color: $Very-Light-Gray;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
