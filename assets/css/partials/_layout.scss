@@ -12,6 +12,11 @@
     text-align: center;
     padding: 16px 24px;
     border-radius: 24px;
+
+    &:hover{
+        opacity: 0.7;
+        transition: 0.3s ease;
+    }
 }
 
 header{
@@ -20,7 +25,7 @@ header{
     margin: 0 auto;
     padding: 24px;
 
-    .navbar-desktop{
+    #navbar-desktop{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -36,6 +41,11 @@ header{
                     font-family: 'Be vietnam pro', sans-serif;
                     text-decoration: none;
                     color: $Very-Dark-Blue;
+                    
+                    &:hover{
+                        opacity: 0.7;
+                        transition: 0.3s ease;
+                    }
                 }
             }
         }
@@ -43,7 +53,7 @@ header{
             display: none;
         }
     }
-    .navbar-mobile{
+    #navbar-mobile{
         display: none;
         align-items: center;
         justify-content: space-between;
@@ -56,10 +66,11 @@ header{
         }
     }
     .menu-mobile{
+        display: none;
         max-width: 400px;
-        display: block;
         margin: 24px auto 0;
-       
+
+        
         nav{
             background-color: $Very-Light-Gray;
             box-shadow: 0px 4px 5px 0 hsla(233, 12%, 13%, 0.26);
@@ -76,8 +87,19 @@ header{
                     font-family: 'Be vietnam pro', sans-serif;
                     text-decoration: none;
                     color: $Very-Dark-Blue;
+                
+                    &:hover{
+                        opacity: 0.7;
+                        transition: 0.3s ease;
+                    }
                 }
             }
-        }
+           
+        } 
     }
+    .active{
+        display: block;
+    }
+    
+    
 }

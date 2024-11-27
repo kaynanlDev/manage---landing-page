@@ -87,49 +87,57 @@ body .btn {
   padding: 16px 24px;
   border-radius: 24px;
 }
+body .btn:hover {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
 body header {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   padding: 24px;
 }
-body header .navbar-desktop {
+body header #navbar-desktop {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body header .navbar-desktop nav ul {
+body header #navbar-desktop nav ul {
   list-style-type: none;
   display: flex;
   align-items: center;
   gap: 16px;
 }
-body header .navbar-desktop nav ul a {
+body header #navbar-desktop nav ul a {
   font-family: "Be vietnam pro", sans-serif;
   text-decoration: none;
   color: hsl(233, 12%, 13%);
 }
+body header #navbar-desktop nav ul a:hover {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
 @media screen and (max-width: 740px) {
-  body header .navbar-desktop {
+  body header #navbar-desktop {
     display: none;
   }
 }
-body header .navbar-mobile {
+body header #navbar-mobile {
   display: none;
   align-items: center;
   justify-content: space-between;
 }
-body header .navbar-mobile .menu-h {
+body header #navbar-mobile .menu-h {
   cursor: pointer;
 }
 @media screen and (max-width: 740px) {
-  body header .navbar-mobile {
+  body header #navbar-mobile {
     display: flex;
   }
 }
 body header .menu-mobile {
+  display: none;
   max-width: 400px;
-  display: block;
   margin: 24px auto 0;
 }
 body header .menu-mobile nav {
@@ -149,6 +157,13 @@ body header .menu-mobile nav ul a {
   font-family: "Be vietnam pro", sans-serif;
   text-decoration: none;
   color: hsl(233, 12%, 13%);
+}
+body header .menu-mobile nav ul a:hover {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+body header .active {
+  display: block;
 }
 
 .attribution {
