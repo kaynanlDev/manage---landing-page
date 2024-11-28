@@ -15,13 +15,13 @@ body {
 }
 body h1 {
   font-family: "Be vietnam pro", sans-serif;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 700;
   color: hsl(233, 12%, 13%);
 }
 @media screen and (max-width: 375px) {
   body h1 {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 700;
     color: hsl(233, 12%, 13%);
   }
@@ -68,13 +68,13 @@ body h4 {
 body p {
   font-family: "Be vietnam pro", sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  color: hsl(233, 12%, 13%);
+  font-weight: 400;
+  color: hsl(227, 12%, 61%);
 }
 @media screen and (max-width: 375px) {
   body p {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     color: hsl(233, 12%, 13%);
   }
 }
@@ -86,10 +86,37 @@ body .btn {
   text-align: center;
   padding: 16px 24px;
   border-radius: 24px;
+  box-shadow: 0px 4px 8px 0px hsla(12, 88%, 59%, 0.384);
 }
 body .btn:hover {
   opacity: 0.7;
   transition: 0.3s ease;
+}
+body .hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+body .back-hero {
+  position: absolute;
+  top: -164px;
+  right: -164px;
+  z-index: -1;
+}
+body .back-hero img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 740px) {
+  body .back-hero {
+    top: -164px;
+    right: -364px;
+  }
+  body .back-hero img {
+    width: 80%;
+    height: 80%;
+  }
 }
 body header {
   max-width: 1100px;
@@ -164,6 +191,37 @@ body header .menu-mobile nav ul a:hover {
 }
 body header .active {
   display: block;
+}
+body .main-hero {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  margin-top: 92px;
+}
+body .main-hero .hero-container p {
+  margin: 8px 0 40px 0;
+  max-width: 80%;
+}
+@media screen and (max-width: 740px) {
+  body .main-hero {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  body .main-hero .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main-hero .hero-container h1, body .main-hero .hero-container p {
+    text-align: center;
+  }
+  body .main-hero .hero-img img {
+    width: 100%;
+  }
 }
 
 .attribution {
