@@ -228,6 +228,7 @@ header{
     margin: 0 auto;
     padding: 0 24px;
     margin-top: 124px;
+    margin-bottom: 92px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,4 +269,61 @@ header{
         text-align: center;
         width: 70%;
     }
+}
+
+
+.simplify{
+    position: relative;
+    width: 100%;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $Bright-Red;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../../../images/bg-simplify-section-desktop.svg')no-repeat center / cover;
+
+        @include responsivi(740px){
+            left: -324px;
+            background: url('../../../images/bg-simplify-section-mobile.svg')no-repeat left / cover;
+        }
+    }
+
+    .simplify-container{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2{
+            color: $Very-Light-Gray;
+            z-index: 2;
+
+            @include responsivi(740px){
+                text-align: center;
+            }
+        }
+        
+        .btn{
+            background-color: $Very-Light-Gray;
+            color: $Bright-Red;
+            font-weight: 600;
+            z-index: 2;
+        }
+
+        
+        @include responsivi(740px){
+            flex-direction: column;
+            gap: 64px;
+        }
+    }
+    
 }

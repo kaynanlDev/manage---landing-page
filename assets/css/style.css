@@ -281,6 +281,7 @@ body .testmonials {
   margin: 0 auto;
   padding: 0 24px;
   margin-top: 124px;
+  margin-bottom: 92px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -317,6 +318,58 @@ body .swiper-slide .person-profile img {
 body .swiper-slide p {
   text-align: center;
   width: 70%;
+}
+body .simplify {
+  position: relative;
+  width: 100%;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(12, 88%, 59%);
+}
+body .simplify::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../../images/bg-simplify-section-desktop.svg") no-repeat center/cover;
+}
+@media screen and (max-width: 740px) {
+  body .simplify::after {
+    left: -324px;
+    background: url("../../../images/bg-simplify-section-mobile.svg") no-repeat left/cover;
+  }
+}
+body .simplify .simplify-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .simplify .simplify-container h2 {
+  color: hsl(0, 0%, 98%);
+  z-index: 2;
+}
+@media screen and (max-width: 740px) {
+  body .simplify .simplify-container h2 {
+    text-align: center;
+  }
+}
+body .simplify .simplify-container .btn {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(12, 88%, 59%);
+  font-weight: 600;
+  z-index: 2;
+}
+@media screen and (max-width: 740px) {
+  body .simplify .simplify-container {
+    flex-direction: column;
+    gap: 64px;
+  }
 }
 
 .attribution {
