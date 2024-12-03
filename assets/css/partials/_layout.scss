@@ -327,3 +327,15 @@ header{
     }
     
 }
+footer{
+    width: 100%;
+    background-color: $Very-Dark-Blue;
+
+    .footer-container{
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
