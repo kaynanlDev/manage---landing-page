@@ -87,10 +87,10 @@ body .btn {
   padding: 16px 24px;
   border-radius: 24px;
   box-shadow: 0px 4px 8px 0px hsla(12, 88%, 59%, 0.384);
+  transition: 0.3s ease;
 }
 body .btn:hover {
   opacity: 0.7;
-  transition: 0.3s ease;
 }
 body .hero {
   position: relative;
@@ -372,15 +372,123 @@ body .simplify .simplify-container .btn {
   }
 }
 body footer {
+  padding: 24px 0;
   width: 100%;
+  height: 200px;
   background-color: hsl(233, 12%, 13%);
 }
 body footer .footer-container {
   max-width: 1100px;
+  height: 100%;
   margin: 0 auto;
   padding: 24px;
   display: flex;
   justify-content: space-between;
+}
+body footer .footer-container .socialmedias {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .footer-container .socialmedias ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style-type: none;
+}
+@media screen and (max-width: 740px) {
+  body footer .footer-container .socialmedias ul {
+    margin: 16px 0 24px 0;
+  }
+}
+body footer .footer-container .footer-links {
+  height: 100%;
+}
+body footer .footer-container .footer-links nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 164px;
+}
+body footer .footer-container .footer-links nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+body footer .footer-container .footer-links nav ul a {
+  font-family: "Be vietnam pro", sans-serif;
+  text-decoration: none;
+  color: hsl(0, 0%, 98%);
+  font-size: 14px;
+}
+body footer .footer-container .footer-links nav ul a:hover {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 740px) {
+  body footer .footer-container .footer-links nav {
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+}
+body footer .footer-container .footer-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body footer .footer-container .footer-form input {
+  border: none;
+  outline: none;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(227, 12%, 61%);
+  width: 250px;
+  padding: 10px 8px;
+  padding-left: 16px;
+  border-radius: 20px;
+}
+body footer .footer-container .footer-form button {
+  background-color: hsl(12, 88%, 59%);
+  color: hsl(0, 0%, 98%);
+  border: none;
+  border-radius: 16px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+body footer .footer-container .footer-form button:hover {
+  opacity: 0.7;
+}
+body footer .footer-container .footer-form p {
+  font-size: 14px;
+}
+@media screen and (max-width: 740px) {
+  body footer .footer-container .footer-form p {
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 740px) {
+  body footer .footer-container .footer-form {
+    text-align: center;
+  }
+  body footer .footer-container .footer-form .form-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 740px) {
+  body footer .footer-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 740px) {
+  body footer {
+    height: 100%;
+  }
 }
 
 .attribution {
