@@ -467,7 +467,27 @@ body footer .footer-container .footer-form p {
 }
 @media screen and (max-width: 740px) {
   body footer .footer-container .footer-form p {
-    margin-top: 32px;
+    margin-top: 64px;
+  }
+}
+body footer .footer-container .footer-form .form-controls {
+  position: relative;
+}
+body footer .footer-container .footer-form .form-controls .mensagem {
+  position: absolute;
+  bottom: -24px;
+  left: 4px;
+  font-family: "Be vietnam pro", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: red;
+}
+@media screen and (max-width: 740px) {
+  body footer .footer-container .footer-form .form-controls .mensagem {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: -32px;
   }
 }
 @media screen and (max-width: 740px) {

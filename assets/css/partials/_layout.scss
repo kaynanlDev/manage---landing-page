@@ -403,6 +403,7 @@ footer{
             
 
              input{
+                
                 border: none;
                 outline: none;
                 background-color: $Very-Light-Gray;
@@ -429,10 +430,30 @@ footer{
                 font-size: 14px;
 
                 @include responsivi(740px){
-                    margin-top: 32px;
+                    margin-top: 64px;
                 }
              }
 
+             .form-controls{
+                position: relative;
+
+                .mensagem{
+                    position: absolute;
+                    bottom: -24px;
+                    left: 4px;
+                    font-family: 'Be vietnam pro', sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: red;
+
+                    @include responsivi(740px){
+                        width: 100%;
+                        text-align: center;
+                        left: 0;
+                        bottom: -32px;
+                    }
+                }
+             }
              @include responsivi(740px){
                 text-align: center;
                 
@@ -441,8 +462,10 @@ footer{
                     justify-content: center;
                     gap: 16px;
                     
+                    
                 }
             }
+           
         }
 
         @include responsivi(740px){

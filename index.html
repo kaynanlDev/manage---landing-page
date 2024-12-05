@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <script src="assets/js/index.js" defer></script>
-  <script src="assets/swiper.js" defer></script>
+  <script src="assets/js/swiper.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <title>Frontend Mentor | Manage landing page</title>
 </head>
@@ -192,10 +192,13 @@
       <div class="footer-form">
         <form action="" id="form-footer">
           <div class="form-controls">
-            <input type="text" name="text" id="text" placeholder="Updates in your inbox...">
-            <button type="submit">Go</button>
+            <label for="text"><input type="text" name="text" id="form-text" placeholder="Updates in your inbox..."></label>
+            <button id="form-btn" type="submit">Go</button>
+            <span class="mensagem"></span>
           </div>
+          
         </form>
+
         <p>Copyright 2020. All Rights Reserved</p>
       </div>
     </div>
